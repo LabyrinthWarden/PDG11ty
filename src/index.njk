@@ -7,7 +7,7 @@ layout: 'base.njk'
 <section class="page-section mt-4">
   <div class="container">
     <!-- News Section Heading -->
-{% include 'section-header.njk' %}
+    {% include 'section-header.njk' %}
 
     <!-- News Section Content -->
     <div class="row justify-content-md-center">
@@ -16,11 +16,11 @@ layout: 'base.njk'
         <h4>
           {{ post.date | postDate }}
         </h4>
-        <h5 class="my-3"><a href="{{ post.url }}">{{ post.data.title }}</a></h5>
+        <h5 class="my-3">
+          <a href="{{ post.url }}" class="text-dark">{{ post.data.title }}</a>
+        </h5>
         <p class="">{{ post.data.description }}</p>
-        <a class="btn btn-primary" href="{{ post.url }}"
-          >more ...</a
-        >
+        <a class="btn btn-secondary" href="{{ post.url }}">more ...</a>
       </div>
       {%- endfor -%}
     </div>

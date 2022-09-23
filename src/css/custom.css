@@ -1,6 +1,9 @@
 body {
     min-height: 100vh;
 }
+.homepage {
+    background-color: #1abc9c;
+}
 
 .login-register-form {
     min-height: 65vh;
