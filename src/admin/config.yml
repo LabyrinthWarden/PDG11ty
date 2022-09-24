@@ -14,13 +14,13 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "imageURL", widget: "image" }
-      - { label: "Start Date", name: "startDate", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["event"] }
-      - { label: "Registration Link", name: "registrationLink", widget: "string" }
-      - { label: "PDGA Link", name: "pdgaLink", widget: "string" }
-      - { label: "Disc Golf Scene Link", name: "discGolfSceneEventLink", widget: "string" }
-      - { label: "Info Link", name: "eventInfoLink", widget: "string" }
-      - { label: "Results Link", name: "resultsLink", widget: "string" }
+      - { label: "Start Date", name: "startDate", widget: "date" }
+      - { label: "Tags", name: "tags", widget: "hidden", default: "event" }
+      - { label: "Registration Link", name: "registrationLink", widget: "string", required: false }
+      - { label: "PDGA Link", name: "pdgaLink", widget: "string", required: false }
+      - { label: "Disc Golf Scene Link", name: "discGolfSceneEventLink", widget: "string", required: false }
+      - { label: "Info Link", name: "eventInfoLink", widget: "string", required: false }
+      - { label: "Results Link", name: "resultsLink", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "post"
     label: "Post"
