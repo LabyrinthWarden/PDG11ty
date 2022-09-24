@@ -3,7 +3,7 @@ backend:
   branch: main
 
 media_folder: "public/assets/upload"
-public_folder: "assets/upload"
+public_folder: "/assets/upload"
 
 collections:
   - name: "event"
