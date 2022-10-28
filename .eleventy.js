@@ -17,6 +17,8 @@ module.exports = function (eleventyConfig) {
     dir: {
       input: 'src',
       output: 'public',
+      includes: '_includes',
+      layouts: '_includes/layouts',
     },
   }
 }
